@@ -16,6 +16,9 @@ This is a project meant to be run on the terminal that requests the user to inpu
 * chicago.csv, new_york_city.csv, washington.csv (included in .gitignore)
 * README.md
 
+### IDE
+Udacity supplies a workspace terminal and IDE on their Nanodegree portal so I used a mix of that IDE and Pycharm + Terminal on MacOS for this project.
+
 ### Credits
 Stack Overflow and many blog posts have helped me to complete this project. The links I consulted for my project are listed below:
 https://practicaldatascience.co.uk/data-science/how-to-find-the-most-common-value-in-a-pandas-column
