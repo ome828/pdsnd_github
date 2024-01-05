@@ -201,7 +201,7 @@ def print_raw_data(df):
     Get a yes/no input from user and print lines of the df based on input. Start printing from line 1
     and increment in sections of 5.
     '''
-    counter = 1
+    counter = 0
     while True:
         want_input = input("Would you like to see raw data from the database? ")
         if want_input.lower() == 'yes' or want_input.lower() == 'no':
