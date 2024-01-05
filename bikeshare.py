@@ -1,7 +1,6 @@
 import time
 import pandas as pd
 import numpy as np
-# from PIL import Image
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -214,15 +213,10 @@ def print_raw_data(df):
         else:
             print("Invalid input. Please respond with a 'yes' or 'no'.")
             continue
-''' 
-def display_img():
-    im = Image.open('/home/workspace/img_files/hello.jpeg')
-    im.show()
-'''
+
 
 def main():
     while True:
-        # display_img()
         city, month, day = get_filters()
         df = load_data(city, month, day)
         time_stats(df)
