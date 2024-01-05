@@ -43,7 +43,7 @@ def get_filters():
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("\nWhich day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday? if no preference, type 'all.' \n")
+        day = input("\nWhich day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday? If no preference, type 'all.' \n")
         day = day.lower()
         if day not in day_of_week:
             print("Invalid input for day of the week. Try again.")
@@ -74,7 +74,7 @@ def load_data(city, month, day):
     df['Day of Week'] = df['Start Time'].dt.day_name()
     
     #Change name of 'Unnamed: 0' column to 'Unique Identifier'
-    df.rename(columns={'Unnamed: 0':'Unique Identifier'}, inplace= True)
+    df.rename(columns = {'Unnamed: 0': 'Unique Identifier'}, inplace = True)
 
     # filter by month if applicable
     if month != 'all':
